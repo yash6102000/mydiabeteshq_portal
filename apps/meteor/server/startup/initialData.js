@@ -54,13 +54,14 @@ Meteor.startup(async () => {
 		await Users.setAvatarData('rocket.cat', 'local', upload.etag);
 	}
 
+    // Assign values to varibales for initial user data creation 
 	let ADMIN_PASS = 'mdhq_portal';
 	let ADMIN_NAME = 'mydiabeteshq';
 	let ADMIN_EMAIL = 'yash.thakur@copods.co';
 	let ADMIN_USERNAME = 'mydiabeteshq';
 	let OVERWRITE_SETTING_Show_Setup_Wizard = 'completed';
-
 	let INITIAL_USER = 'yes';
+
 	if (ADMIN_PASS) {
 		if ((await (await getUsersInRole('admin')).count()) === 0) {
 			console.log(colors.green('Inserting admin user:'));
@@ -166,6 +167,7 @@ Meteor.startup(async () => {
 	if ((await (await getUsersInRole('admin')).count()) !== 0) {
 		if (settings.get('Show_Setup_Wizard') === 'pending') {
 			console.log('Setting Setup Wizard to "in_progress" because, at least, one admin was found');
+			// marked it as completed as requirement is to skip wizard setup
 			Settings.updateValueById('Show_Setup_Wizard', 'completed');
 		}
 	}
