@@ -13,12 +13,12 @@ const SetupWizardPage = (): ReactElement => {
 	switch (currentStep) {
 		case 1:
 			return <AdminInfoStep />;
-		case 2:
-			return <OrganizationInfoStep />;
-		case 3:
-			return <RegisterServerStep />;
-		case 4:
-			return <CloudAccountConfirmation />;
+		// case 2:
+		// 	return <OrganizationInfoStep />;
+		// case 3:
+		// 	return <RegisterServerStep />;
+		// case 4:
+		// 	return <CloudAccountConfirmation />;
 
 		default:
 			throw new Error('Wrong wizard step');
