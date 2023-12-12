@@ -3664,7 +3664,7 @@
   "Post_to_s_as_s": "Beküldés a(z) <strong>%s</strong> csatornára <strong>%s</strong> felhasználóként",
   "post-readonly": "Beküldés csak olvashatóba",
   "post-readonly_description": "Jogosultság egy csak olvasható csatornába történő üzenet beküldéséhez",
-  "Powered_by_RocketChat": "A gépházban: Rocket.Chat",
+  "Powered_by_MyDiabetesHq": "A gépházban: Rocket.Chat",
   "Preferences": "Beállítások",
   "Preferences_saved": "A beállítások elmentve",
   "Preparing_data_for_import_process": "Adatok előkészítésre az importálási folyamathoz",

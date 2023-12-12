@@ -23,7 +23,7 @@ const RocketChatAssetsInstance = new RocketChatFile.GridFS({
 const assets: IRocketChatAssets = {
 	logo: {
 		label: 'logo (svg, png, jpg)',
-		defaultUrl: 'images/logo/logo.svg',
+		defaultUrl: 'images/logo/MyDiabetesHq-Logo.png',
 		constraints: {
 			type: 'image',
 			extensions: ['svg', 'png', 'jpg', 'jpeg'],
@@ -35,7 +35,7 @@ const assets: IRocketChatAssets = {
 	},
 	logo_dark: {
 		label: 'logo - dark theme (svg, png, jpg)',
-		defaultUrl: 'images/logo/logo_dark.svg',
+		defaultUrl: 'images/logo/MyDiabetesHq-Logo.png',
 		constraints: {
 			type: 'image',
 			extensions: ['svg', 'png', 'jpg', 'jpeg'],

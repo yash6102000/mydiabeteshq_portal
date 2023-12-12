@@ -3811,7 +3811,7 @@
   "Post_to_s_as_s": "Posta till <strong>%s</strong> som <strong>%s</strong>",
   "post-readonly": "Skicka bara en gång",
   "post-readonly_description": "Tillstånd att skicka ett meddelande i en skrivskyddad kanal",
-  "Powered_by_RocketChat": "Drivs av Rocket.Chat",
+  "Powered_by_MyDiabetesHq": "Drivs av Rocket.Chat",
   "Preferences": "Inställningar",
   "Preferences_saved": "Inställningar sparade",
   "Preparing_data_for_import_process": "Förbereder data för import",
