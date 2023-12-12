@@ -29,7 +29,7 @@ const SidebarFooterDefault = (): ReactElement => {
 				is='footer'
 				pb={12}
 				pi={16}
-				height='x48'
+				height='x64'
 				width='auto'
 				className={sidebarFooterStyle}
 				dangerouslySetInnerHTML={{
