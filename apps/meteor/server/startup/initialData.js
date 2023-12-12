@@ -55,14 +55,15 @@ Meteor.startup(async () => {
 	}
 
     // Assign values to varibales for initial user data creation 
-	let ADMIN_PASS = 'mdhq_portal';
-	let ADMIN_NAME = 'mydiabeteshq';
-	let ADMIN_EMAIL = 'yash.thakur@copods.co';
-	let ADMIN_USERNAME = 'mydiabeteshq';
-	let OVERWRITE_SETTING_Show_Setup_Wizard = 'completed';
-	let INITIAL_USER = 'yes';
+	let initialUserData ={
+		'ADMIN_PASS':'mdhq_portal',
+		'ADMIN_NAME':'mydiabeteshq',
+		'ADMIN_EMAIL':'yash.thakur@copods.co',
+		'ADMIN_USERNAME':'mydiabeteshq',
+		'INITIAL_USER':'INITIAL_USER'
+	};
 
-	if (ADMIN_PASS) {
+	if (initialUserData.ADMIN_PASS) {
 		if ((await (await getUsersInRole('admin')).count()) === 0) {
 			console.log(colors.green('Inserting admin user:'));
 			const adminUser = {
@@ -76,23 +77,23 @@ Meteor.startup(async () => {
 
 			};
 			
-			if (ADMIN_NAME) {
-				adminUser.name = ADMIN_NAME;
+			if (initialUserData.ADMIN_NAME) {
+				adminUser.name = initialUserData.ADMIN_NAME;
 			}
 			
 			console.log(colors.green(`Name: ${adminUser.name}`));
 			await addUserToDefaultChannels(adminUser, true);
-			if (ADMIN_EMAIL) {
-				if (validateEmail(ADMIN_EMAIL)) {
-					if (!(await Users.findOneByEmailAddress(ADMIN_EMAIL))) {
+			if (initialUserData.ADMIN_EMAIL) {
+				if (validateEmail(initialUserData.ADMIN_EMAIL)) {
+					if (!(await Users.findOneByEmailAddress(initialUserData.ADMIN_EMAIL))) {
 						adminUser.emails = [
 							{
-								address: ADMIN_EMAIL,
+								address: initialUserData.ADMIN_EMAIL,
 								verified: 'true' === 'true',
 							},
 						];
 
-						console.log(colors.green(`Email: ${ADMIN_EMAIL}`));
+						console.log(colors.green(`Email: ${initialUserData.ADMIN_EMAIL}`));
 					} else {
 						console.log(colors.red('Email provided already exists; Ignoring environment variables ADMIN_EMAIL'));
 					}
@@ -101,7 +102,7 @@ Meteor.startup(async () => {
 				}
 			}
 
-			if (ADMIN_USERNAME) {
+			if (initialUserData.ADMIN_USERNAME) {
 				let nameValidation;
 
 				try {
@@ -110,9 +111,9 @@ Meteor.startup(async () => {
 					nameValidation = new RegExp('^[0-9a-zA-Z-_.]+$');
 				}
 
-				if (nameValidation.test(ADMIN_USERNAME)) {
-					if (await checkUsernameAvailability(ADMIN_USERNAME)) {
-						adminUser.username = ADMIN_USERNAME;
+				if (nameValidation.test(initialUserData.ADMIN_USERNAME)) {
+					if (await checkUsernameAvailability(initialUserData.ADMIN_USERNAME)) {
+						adminUser.username = initialUserData.ADMIN_USERNAME;
 					} else {
 						console.log(colors.red('Username provided already exists; Ignoring environment variables ADMIN_USERNAME'));
 					}
@@ -127,7 +128,7 @@ Meteor.startup(async () => {
 
 			const { insertedId: userId } = await Users.create(adminUser);
 
-			await Accounts.setPasswordAsync(userId, ADMIN_PASS);
+			await Accounts.setPasswordAsync(userId, initialUserData.ADMIN_PASS);
 
 			await addUserRolesAsync(userId, ['admin']);
 
