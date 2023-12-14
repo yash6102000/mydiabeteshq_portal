@@ -775,7 +775,7 @@ describe('[Chat]', function () {
 				const imgUrlMsgPayload = {
 					_id: `id-${Date.now()}1`,
 					rid: 'GENERAL',
-					msg: 'http://localhost:3000/images/logo/logo.png',
+					msg: 'http://localhost:3000/images/logo/MyDiabetesHq-Logo.png',
 					emoji: ':smirk:',
 				};
 

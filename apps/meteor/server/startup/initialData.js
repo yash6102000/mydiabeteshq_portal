@@ -38,7 +38,7 @@ Meteor.startup(async () => {
 
 		await addUserRolesAsync('rocket.cat', ['bot']);
 
-		const buffer = Buffer.from(await Assets.getBinaryAsync('avatars/rocketcat.png'));
+		const buffer = Buffer.from(await Assets.getBinaryAsync('avatars/mydiabeteshq_logo_color.png'));
 
 		const rs = RocketChatFile.bufferToStream(buffer, 'utf8');
 		const fileStore = FileUpload.getStore('Avatars');
