@@ -149,7 +149,10 @@ export const createAccountSettings = () =>
 			await this.add('Accounts_Iframe_api_url', '', { type: 'string', public: true });
 			await this.add('Accounts_Iframe_api_method', 'POST', { type: 'string', public: true });
 		});
-		await this.add('Accounts_AllowAnonymousRead', false, {
+		// changed Accounts_AllowAnonymousRead from false to true so,
+		// user directly visited to the portal insted of login page with proper restriction (if not logged in)
+
+		await this.add('Accounts_AllowAnonymousRead', true, {
 			type: 'boolean',
 			public: true,
 		});
