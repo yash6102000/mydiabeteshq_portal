@@ -57,7 +57,7 @@ const assets: IRocketChatAssets = {
 	},
 	favicon_ico: {
 		label: 'favicon (ico)',
-		defaultUrl: 'favicon.ico',
+		defaultUrl: 'images/logo/mydiabeteshq_logo_color.png',
 		constraints: {
 			type: 'image',
 			extensions: ['ico'],
@@ -65,7 +65,7 @@ const assets: IRocketChatAssets = {
 	},
 	favicon: {
 		label: 'favicon (svg)',
-		defaultUrl: 'images/logo/icon.svg',
+		defaultUrl: 'images/logo/mydiabeteshq_logo_color.png',
 		constraints: {
 			type: 'image',
 			extensions: ['svg'],
@@ -73,7 +73,7 @@ const assets: IRocketChatAssets = {
 	},
 	favicon_16: {
 		label: 'favicon 16x16 (png)',
-		defaultUrl: 'images/logo/favicon-16x16.png',
+		defaultUrl: 'images/logo/mydiabeteshq_logo_color.png',
 		constraints: {
 			type: 'image',
 			extensions: ['png'],
@@ -83,7 +83,7 @@ const assets: IRocketChatAssets = {
 	},
 	favicon_32: {
 		label: 'favicon 32x32 (png)',
-		defaultUrl: 'images/logo/favicon-32x32.png',
+		defaultUrl: 'images/logo/mydiabeteshq_logo_color.png',
 		constraints: {
 			type: 'image',
 			extensions: ['png'],
@@ -93,7 +93,7 @@ const assets: IRocketChatAssets = {
 	},
 	favicon_192: {
 		label: 'android-chrome 192x192 (png)',
-		defaultUrl: 'images/logo/android-chrome-192x192.png',
+		defaultUrl: 'images/logo/mydiabeteshq_logo_color.png',
 		constraints: {
 			type: 'image',
 			extensions: ['png'],
@@ -103,7 +103,7 @@ const assets: IRocketChatAssets = {
 	},
 	favicon_512: {
 		label: 'android-chrome 512x512 (png)',
-		defaultUrl: 'images/logo/android-chrome-512x512.png',
+		defaultUrl: 'images/logo/mydiabeteshq_logo_color.png',
 		constraints: {
 			type: 'image',
 			extensions: ['png'],
@@ -113,7 +113,7 @@ const assets: IRocketChatAssets = {
 	},
 	touchicon_180: {
 		label: 'apple-touch-icon 180x180 (png)',
-		defaultUrl: 'images/logo/apple-touch-icon.png',
+		defaultUrl: 'images/logo/mydiabeteshq_logo_color.png',
 		constraints: {
 			type: 'image',
 			extensions: ['png'],
@@ -123,7 +123,7 @@ const assets: IRocketChatAssets = {
 	},
 	touchicon_180_pre: {
 		label: 'apple-touch-icon-precomposed 180x180 (png)',
-		defaultUrl: 'images/logo/apple-touch-icon-precomposed.png',
+		defaultUrl: 'images/logo/mydiabeteshq_logo_color.png',
 		constraints: {
 			type: 'image',
 			extensions: ['png'],
@@ -133,7 +133,7 @@ const assets: IRocketChatAssets = {
 	},
 	tile_70: {
 		label: 'mstile 70x70 (png)',
-		defaultUrl: 'images/logo/mstile-70x70.png',
+		defaultUrl: 'images/logo/mydiabeteshq_logo_color.png',
 		constraints: {
 			type: 'image',
 			extensions: ['png'],
@@ -143,7 +143,7 @@ const assets: IRocketChatAssets = {
 	},
 	tile_144: {
 		label: 'mstile 144x144 (png)',
-		defaultUrl: 'images/logo/mstile-144x144.png',
+		defaultUrl: 'images/logo/mydiabeteshq_logo_color.png',
 		constraints: {
 			type: 'image',
 			extensions: ['png'],
@@ -153,7 +153,7 @@ const assets: IRocketChatAssets = {
 	},
 	tile_150: {
 		label: 'mstile 150x150 (png)',
-		defaultUrl: 'images/logo/mstile-150x150.png',
+		defaultUrl: 'images/logo/mydiabeteshq_logo_color.png',
 		constraints: {
 			type: 'image',
 			extensions: ['png'],
@@ -163,7 +163,7 @@ const assets: IRocketChatAssets = {
 	},
 	tile_310_square: {
 		label: 'mstile 310x310 (png)',
-		defaultUrl: 'images/logo/mstile-310x310.png',
+		defaultUrl: 'images/logo/mydiabeteshq_logo_color.png',
 		constraints: {
 			type: 'image',
 			extensions: ['png'],
@@ -173,7 +173,7 @@ const assets: IRocketChatAssets = {
 	},
 	tile_310_wide: {
 		label: 'mstile 310x150 (png)',
-		defaultUrl: 'images/logo/mstile-310x150.png',
+		defaultUrl: 'images/logo/mydiabeteshq_logo_color.png',
 		constraints: {
 			type: 'image',
 			extensions: ['png'],
@@ -183,7 +183,7 @@ const assets: IRocketChatAssets = {
 	},
 	safari_pinned: {
 		label: 'safari pinned tab (svg)',
-		defaultUrl: 'images/logo/safari-pinned-tab.svg',
+		defaultUrl: 'images/logo/mydiabeteshq_logo_color.png',
 		constraints: {
 			type: 'image',
 			extensions: ['svg'],
