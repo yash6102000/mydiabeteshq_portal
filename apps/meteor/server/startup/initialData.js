@@ -49,7 +49,7 @@ Meteor.startup(async () => {
 			type: 'image/png',
 			size: buffer.length,
 		};
-
+console.log('hi')
 		const upload = await fileStore.insert(file, rs);
 		await Users.setAvatarData('rocket.cat', 'local', upload.etag);
 	}
