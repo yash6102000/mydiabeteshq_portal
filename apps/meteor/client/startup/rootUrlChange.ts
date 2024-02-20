@@ -32,7 +32,8 @@ Meteor.startup(() => {
 		if (!siteUrl) {
 			return;
 		}
-
+console.log(__meteor_runtime_config__,'__meteor_runtime_config__')
+console.log(location.origin,'originlocation')
 		const currentUrl = location.origin + window.__meteor_runtime_config__.ROOT_URL_PATH_PREFIX;
 		if (window.__meteor_runtime_config__.ROOT_URL.replace(/\/$/, '') !== currentUrl) {
 			const confirm = (): void => {
