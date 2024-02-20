@@ -21,8 +21,8 @@ export const createGeneralSettings = () =>
 				public: false,
 				enableQuery: { _id: 'API_Enable_Shields', value: true },
 			});
-			await this.add('API_Enable_CORS', false, { type: 'boolean', public: false });
-			await this.add('API_CORS_Origin', '*', {
+			await this.add('API_Enable_CORS', true, { type: 'boolean', public: false });
+			await this.add('API_CORS_Origin', 'http://44.195.15.83:3000/', {
 				type: 'string',
 				public: false,
 				enableQuery: { _id: 'API_Enable_CORS', value: true },
