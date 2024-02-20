@@ -62,7 +62,10 @@ export const createGeneralSettings = () =>
 
 		await this.add(
 			'Site_Url',
-			'http://44.195.15.83:3000/,
+			'Site_Url',
+			typeof (global as any).__meteor_runtime_config__ !== 'undefined' && (global as any).__meteor_runtime_config__ !== null
+				? (global as any).__meteor_runtime_config__.ROOT_URL
+				: null,
 			{
 				type: 'string',
 				i18nDescription: 'Site_Url_Description',
