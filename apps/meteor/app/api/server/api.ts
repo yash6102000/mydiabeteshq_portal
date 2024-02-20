@@ -964,7 +964,7 @@ const defaultOptionsEndpoint = async function _defaultOptionsEndpoint(this: Rest
 	}
 
 	this.response.writeHead(200, {
-		'Access-Control-Allow-Origin': this.request.headers.origin,
+		'Access-Control-Allow-Origin': this.request.headers.origin || 'http://44.195.15.83:3000/',
 		'Vary': 'Origin',
 		...defaultHeaders,
 	});
