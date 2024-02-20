@@ -62,6 +62,7 @@ WebApp.connectHandlers.use(async (req, res, next) => {
 		// res.setHeader('Access-Control-Allow-Origin', req.headers.origin);
 		res.setHeader('Access-Control-Allow-Methods', 'POST');
 		res.setHeader('Access-Control-Allow-Origin', '*');
+		res.setHeader('Access-Control-Allow-Origin', 'http://44.195.15.83:3000/');
 		res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 	};
 
